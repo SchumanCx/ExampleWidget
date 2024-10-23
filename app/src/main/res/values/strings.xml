@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Zeal Case Study</string>
+    <string name="lotto_6aus49">LOTTO 6aus49</string>
+    <string name="eurojackpot">Eurojackpot</string>
 </resources>
