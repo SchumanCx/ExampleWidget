@@ -32,6 +32,11 @@ android {
             )
         }
     }
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
@@ -71,10 +76,15 @@ dependencies {
     kapt(libs.dagger.hilt.compiler)
 
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
+    testImplementation(libs.mockk)
+    testImplementation(libs.androidx.core.testing)
+    testImplementation(libs.jetbrains.coroutine.test)
+    testImplementation(libs.androidx.junit.ktx)
+    testImplementation(libs.androidx.ui.test.junit4.android)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.glance.testing)
+    testImplementation(libs.androidx.glance.testing.unit)
+    testImplementation(libs.androidx.glance.appwidget.testing)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 }
