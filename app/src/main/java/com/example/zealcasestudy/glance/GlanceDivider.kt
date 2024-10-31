@@ -10,6 +10,8 @@ import androidx.glance.background
 import androidx.glance.layout.Box
 import androidx.glance.layout.fillMaxWidth
 import androidx.glance.layout.height
+import androidx.glance.semantics.semantics
+import androidx.glance.semantics.testTag
 
 @Composable
 fun GlanceDivider(color: Color = MaterialTheme.colorScheme.onBackground, thickness: Dp = 1.dp) {
@@ -17,7 +19,10 @@ fun GlanceDivider(color: Color = MaterialTheme.colorScheme.onBackground, thickne
         modifier = GlanceModifier
             .height(thickness)
             .fillMaxWidth()
-            .background(color),
+            .background(color)
+            .semantics {
+                testTag = "GlanceDivider"
+            },
         content = { }
     )
 }

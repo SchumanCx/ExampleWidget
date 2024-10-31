@@ -83,7 +83,6 @@ dependencies {
     testImplementation(libs.androidx.ui.test.junit4.android)
     testImplementation(libs.robolectric)
     testImplementation(libs.androidx.glance.testing)
-    testImplementation(libs.androidx.glance.testing.unit)
     testImplementation(libs.androidx.glance.appwidget.testing)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)

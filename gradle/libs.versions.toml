@@ -37,7 +37,6 @@ androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-man
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-glance-appwidget = { group = "androidx.glance", name = "glance-appwidget", version.ref = "glanceAppwidget" }
 androidx-glance-testing = { group = "androidx.glance", name = "glance-testing", version.ref = "glanceAppwidgetTest" }
-androidx-glance-testing-unit = { group = "androidx.glance", name = "glance-testing-unit", version.ref = "glanceAppwidgetTest" }
 androidx-glance-appwidget-testing = { group = "androidx.glance", name = "glance-appwidget-testing", version.ref = "glanceAppwidgetTest" }
 mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 androidx-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTesting" }
